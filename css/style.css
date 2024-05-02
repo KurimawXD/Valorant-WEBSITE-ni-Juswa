@@ -1,0 +1,388 @@
+@import url('https://fonts.cdnfonts.com/css/valorant');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*External CSS*/
+
+body{
+	background-image: url(../img/valorant-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0;
+	padding: 0; 
+
+}
+
+.wrapper{
+	background-color: transparent;
+	width: 1485px;
+	margin: 0 auto;
+	padding: 20px;
+    padding-bottom: 0px;
+	border-top: 10px solid #c03543;
+	border-bottom: 10px solid #c03543;
+}
+
+.header{
+	padding: 20px;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+	height: 65px;
+    width: 100%;
+    margin-top: -60px;
+    margin-left: -20px;
+    background-color: #111111;
+}
+
+.nav .logo {
+	height: 50px;
+	margin: 0;
+	margin-bottom: -15px;
+	margin-right: 10px;
+}
+.nav .valo-name{
+	height: 30px;
+	margin: 0;
+	margin-bottom: -3px;
+	filter: invert(100%);
+	margin-right: 500px;
+}
+
+.nav ul{
+	margin: 0;
+	padding: 10px 0;
+}
+
+.nav ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+.nav ul li a{
+	text-transform: uppercase;	
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	margin-right: 30px;
+	padding: 10px;
+}
+
+.nav ul li a:hover{
+	color: #d35400;
+    border-bottom: 3px solid #c03543;
+}
+
+.nav ul li a.active{
+	color: #d35400;
+}
+
+
+.main{
+	min-height: 500px; 
+}
+
+.left-side-bar{
+	width: 250px;
+	float: left;
+	min-height: 50px;
+	margin: 10px 10px 10px 0;
+    border-radius: 15px;
+}
+
+
+.left-side-bar h2 {
+	margin: 0;
+	padding: 10px;
+    font-size: 22px;
+	text-align: center;
+	text-transform: uppercase;
+    background-color: #ebebeb;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+	font-family: VALORANT;
+}
+
+.left-side-bar h4 {
+	margin: 0;
+	padding: 10px;
+	text-transform: uppercase;
+    background-color: #ebebeb;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+.left-side-bar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.left-side-bar ul li {
+	margin: 0;
+	text-align: center;
+	border-bottom: 1px solid white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.left-side-bar ul li a {
+	display: block;
+	width: 100%;
+	padding: 15px 0;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+
+
+}
+
+.left-side-bar ul li a:hover{
+	color: gold;
+}
+
+
+.content {
+	width: 1205px;
+	float: left;
+	min-width: 500px;
+	margin: 10px;
+}
+
+.content-2 {
+	width: 1450px;
+	float: left;
+	min-width: 500px;
+	margin: 10px;
+	margin-bottom: 50px;
+}
+
+
+.items {
+    display: block;
+}
+
+.items .gun:hover {
+    box-shadow: #ebebeb 0px 0px 4px 3px;
+    border-radius: 15px;
+    transition: 0.3s ;
+}
+
+
+.items .gun {
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+} 
+
+.items .description {
+    color: white;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.items img {
+    height: 100px;
+    width: 170px;
+    padding: 20px;
+}
+
+.content h1,
+.content-2 h1 {
+	margin: 0;
+	padding: 0;
+	color: #d35400;
+	font-size: 50px;
+	border-bottom: 4px solid white;
+	font-family: VALORANT;
+}
+
+
+.content h2,
+.content-2 h2{
+	color: orange;
+	text-transform: uppercase;
+}
+
+.content h3,
+.content-2 h3 {
+    font-size: 25px;
+	font-family: VALORANT;
+}
+
+.content p,
+.content-2 p {
+    margin-top: -20px;
+	text-align: justify;
+	line-height: 1.5;
+	text-indent: 40px;
+}
+
+
+/* AGENT SLIDES */
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: #c03543 0px 0px 4px 3px;
+}
+
+.card .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card .row .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card .row .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('../img/agents/phoenix.jpg');
+}
+.card[for="c2"] {
+    background-image: url('../img/agents/breach.jpeg');
+}
+.card[for="c3"] {
+    background-image: url('../img/agents/sage.jpg');
+}
+.card[for="c4"] {
+    background-image: url('../img/agents/killjoy.jpeg');
+}
+.card[for="c5"] {
+    background-image: url('../img/agents/neonne.jpg');
+}
+.card[for="c6"] {
+    background-image: url('../img/agents/reyna.jpeg');
+}
+.card[for="c7"] {
+    background-image: url('../img/agents/jett.jpg');
+}
+.card[for="c8"] {
+    background-image: url('../img/agents/cypher.jpg');
+}
+.card[for="c9"] {
+    background-image: url('../img/agents/fade.jpg')
+}
+.card[for="c10"] {
+    background-image: url('../img/agents/viper.jpg');
+}
+
+.footer {
+    width: 100%;
+    margin-left: -20px;
+	clear: both;
+	background-color: #111111;
+    color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer p {
+	font-weight: normal;
+
+}
+
+.footer a {
+    color: white;
+}
+
+.footer i {
+    background-color: #272727;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.footer i:hover {
+    box-shadow: darkgray 0px 0px 3px 3px;
+	transition: 0.2s;
+}
+
+.footer button {
+	font-size: 18px;
+	color: white;
+	background-color: transparent;
+	border: none;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.footer button a {
+	text-decoration: none;
+}
+
+.footer button:hover {
+	background-color: #333333;
+	transition: 0.3s;
+}
